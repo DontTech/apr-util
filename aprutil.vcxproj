@@ -103,6 +103,7 @@
     <OutDir>.\LibD\</OutDir>
     <IntDir>.\LibD\</IntDir>
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>..\..\libexpat\expat\lib;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>.\LibR\</OutDir>
