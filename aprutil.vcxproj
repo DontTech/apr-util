@@ -109,7 +109,7 @@
     <OutDir>.\LibR\</OutDir>
     <IntDir>.\LibR\</IntDir>
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>..\libexpat\expat\lib;$(IncludePath)</IncludePath>
+    <IncludePath>..\..\libexpat\expat\lib;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
