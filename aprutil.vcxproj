@@ -103,13 +103,13 @@
     <OutDir>.\LibD\</OutDir>
     <IntDir>.\LibD\</IntDir>
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>..\..\libexpat\expat\lib;$(IncludePath)</IncludePath>
+    <IncludePath>..\libexpat\expat\lib;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>.\LibR\</OutDir>
     <IntDir>.\LibR\</IntDir>
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>..\..\libexpat\expat\lib;$(IncludePath)</IncludePath>
+    <IncludePath>..\libexpat\expat\lib;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
