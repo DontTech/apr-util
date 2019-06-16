@@ -94,16 +94,19 @@
     <OutDir>.\x64\Debug\</OutDir>
     <IntDir>.\x64\Debug\</IntDir>
     <LinkIncremental>false</LinkIncremental>
+    <IncludePath>..\libexpat\expat\lib;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>.\Release\</OutDir>
     <IntDir>.\Release\</IntDir>
     <LinkIncremental>false</LinkIncremental>
+    <IncludePath>..\libexpat\expat\lib;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutDir>.\x64\Release\</OutDir>
     <IntDir>.\x64\Release\</IntDir>
     <LinkIncremental>false</LinkIncremental>
+    <IncludePath>..\libexpat\expat\lib;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <OutDir>.\Debug\</OutDir>
@@ -204,10 +207,11 @@
       <OutputFile>Release\libaprutil-1.dll</OutputFile>
       <ImportLibrary>Release\libaprutil-1.lib</ImportLibrary>
       <BaseAddress>0x6EE60000</BaseAddress>
-      <AdditionalDependencies>$(XML_PARSER).lib;ws2_32.lib;mswsock.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libexpat.lib;ws2_32.lib;mswsock.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalOptions> /MACHINE:X86</AdditionalOptions>
       <OptimizeReferences>true</OptimizeReferences>
       <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>..\libexpat\expat\win32\bin\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
